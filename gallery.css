@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #010101;
+    width: 1024px;
+    margin: auto;
+}
+
+.borda {
+    background-color: #010101;
+    height: 50px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+
+
+/* TOPBAR MENU */
+.topbar {
+    width: 1024px;
+    margin: auto;
+}
+
+nav ul {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background: #151515;
+    border: white solid 1px;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: black;
+    background: wheat;
+}
+
+.checkbtn {
+    font-size: 40px;
+    color: white;
+    float: left;
+    line-height: 100px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* FECHAMENTO TOPBAR MENU */
+
+
+
+/* GALERIA */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+.gallery-items {
+    width: 250px;
+    height: 250px;
+
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(29, 28, 28);
+
+}
+
+.gallery-items img:hover {
+    transform: scale(1.5);
+    transition: transform .2s linear;
+}
+
+/* FECHAMENTO GALERIA */
+
+
+
+/* FOOTER CONTATO */
+
+.downbar {
+    background: #010101;
+}
+
+footer {
+    color: white;
+    bottom: 0px;
+    background-color: #010101;
+}
+
+.main-content {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.left .content .social a span:hover {
+    background: wheat;
+}
+
+.left .content p {
+    text-align: justify;
+}
+
+.center .content .fas {
+    font-size: 23px;
+    background: #1a1a1a;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: wheat;
+}
+
+.center .content .text {
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 10px 0;
+}
+
+.center .content.msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font-size: 17px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input {
+    height: 25px;
+}
+
+.right form .text {
+    font-size: 17px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    background: #f12020;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover {
+    background: wheat;
+}
+
+/* FECHAMENTO FOOTER CONTATO */
+
+
+
+/* @MEDIA TOPBAR MENU */
+
+@media (max-width: 1024px) {
+
+    .toplogo {
+        margin-right: 60px;
+    }
+
+    .topbar2 {
+        background: #010101;
+    }
+
+    .topbar {
+        width: auto;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn2 {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        background: #010101;
+        border-radius: 10px;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 70px 0;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #5434af;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+/* FECHAMENTO @MEDIA TOPBAR MENU  */
+
+
+
+/* @MEDIA GALERIA */
+
+
+
+@media (max-width: 1024px) {
+    body {
+        width: auto;
+    }
+    header h1 {
+        margin-right: 65px;
+    }
+}
+
+/* FECHAMENTO @MEDIA GALERIA */
+
+
+
+/* @MEDIA FOOTER */
+
+@media (max-width: 1024px) {
+    footer {
+        bottom: 0px;
+    }
+
+    .main-content {
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-content .box {
+        margin: 5px 0;
+    }
+}
+
+/* FECHAMENTO @MEDIA FOOTER */

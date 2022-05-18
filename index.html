@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <script src="https://kit.fontawesome.com/1c241c6a24.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    </style>
+    <title>Barbearia Rei do Rio</title>
+</head>
+
+<body>
+
+    <!-- TOPBAR MENU -->
+
+    <header>
+        <div class="topbar">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./history.html">Historia</a></li>
+                    <li><a href="./gallery.html">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="borda"></div>
+
+        <div class="topbar2">
+            <img class="toplogo" src="./assets/index/logo.png" alt="logo"> <br>
+            <p class="toptext">REI DO RIO <br> BARBEARIA</p>
+        </div>
+    </header>
+
+    <!-- FECHAMENTO TOPBAR MENU -->
+
+    <div class="borda"></div>
+
+    <!-- SOBRE -->
+
+    <div class="sobre">
+        <div class="meio">
+            <img class="th" src="./assets/index/thpng.png" alt="thiaguinho" width="400px">
+            <h1 class="tresumo">Rei do Rio</h1>
+            <p class="resumo">Olá, meu nome é thiago. Resumo da minha vida!
+                Olá, meu nome é thiago. Resumo da minha vida!Olá, meu nome é thiago. Resumo da minha vida!Olá, meu
+                nome
+                é thiago. Resumo da minha vida!Olá, meu nome é thiago. Resumo da minha vida!Olá, meu nome é thiago.
+                Resumo da minha vida!Olá, meu nome é thiago. Resumo da minha vida!Olá, meu nome é thiago. Resumo da
+                minha vida!Olá, meu nome é thiago. Resumo da minha vida!Olá, meu nome é thiago. Resumo da minha
+                vida!Olá, meu nome é thiago. Resumo da minha vida!</p> <br><br>
+        </div>
+    </div>
+
+    <!-- FECHAMENTO SOBRE -->
+
+    <div class="borda"></div>
+
+    <!-- CATALAGO -->
+
+    <main>
+        <div class="catalago">
+            <h1>Catalago</h1>
+            <section class="card">
+                <h4>Barba R$: 14,99</h4>
+                <a href="#"><img src="./assets/index/catalog/barba.jpg" alt="barba" width="250px"></a>
+            </section>
+            <section class="card">
+                <h4>Corte R$: 19,99</h4>
+                <img src="./assets/index/catalog/corte.jpg" alt="corte" width="250px">
+            </section>
+            <section class="card">
+                <h4>Corte e Barba R$: 24,99</h4>
+                <img src="./assets/index/catalog/corte + barba.jpg" alt="corteebarba" width="250px">
+            </section>
+            <section class="card">
+                <h4>Corte e Pigmentação R$: 29,99</h4>
+                <img src="./assets/index/catalog/corte + pigmentação.jpg" alt="corteepigmentação" width="250px">
+            </section>
+            <section class="card">
+                <h4>Barba R$: 14,99</h4>
+                <img src="./assets/index/catalog/barba.jpg" alt="barba" width="250px">
+            </section>
+            <section class="card">
+                <h4>Corte R$: 19,99</h4>
+                <img src="./assets/index/catalog/corte.jpg" alt="corte" width="250px">
+            </section>
+        </div>
+    </main>
+
+    <!-- FECHAMENTO -->
+
+    <div class="borda"></div>
+
+    <!-- CONTATO -->
+
+    <footer id="contact">
+        <div class="main-content">
+            <div class="left box">
+                <h2>Sobre nós</h2>
+                <div class="content">
+                    <p>Aqui será um pequeno resumo.</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Endereço</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker"></span>
+                        <span class="text">Av Brasil doidera</span>
+                    </div>
+
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">(21) 99999-9999</span>
+                    </div>
+
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">contato@contato.com.br</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contato</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email:</div>
+                            <input type="email" required>
+                        </div>
+
+                        <div class="msg">
+                            <div class="text">Mensagem:</div>
+                            <textarea name="msg" id="msg" cols="25" rows="2" required></textarea>
+                        </div>
+
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- FECHAMENTO -->
+
+</body>
+
+</html>
